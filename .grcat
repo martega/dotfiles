@@ -1,0 +1,40 @@
+#row delimeter when using \G key
+regexp=[*]+.+[*]+
+count=stop
+colours=blue
+-
+#table borders
+regexp=[+\-]+[+\-]|[|]
+colours=blue
+-
+#default word color
+regexp=[\w]+
+colours=cyan
+-
+#data in ( ) and ' '
+regexp=\([\w\d,']+\)
+colours=red
+-
+#numeric
+regexp=\s[\d\.]+\s
+colours=yellow
+-
+#column names when using \G key
+regexp=\w+:
+colours=cyan
+-
+#date
+regexp=\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}
+colours=green
+-
+#IP
+regexp=(\d{1,3}\.){3}\d{1,3}(:\d{1,5})?
+colours=green
+-
+#schema
+regexp=`\w+`
+colours=yellow
+-
+#email
+regexp=[\w\.\-_]+@[\w\.\-_]+
+colours=magenta
