@@ -9,6 +9,7 @@ set list
 set nowrap
 set number
 autocmd FileType javascript set expandtab shiftwidth=2 tabstop=2
+autocmd BufRead,BufNewFile *.json set filetype=javascript
 autocmd FileType feature set expandtab shiftwidth=2 tabstop=2
 noremap <silent> <C-N> :NERDTreeToggle<CR>
 call pathogen#infect()
